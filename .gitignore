@@ -27,3 +27,13 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore db conf.
+/config/database.yml
+
+# Ignore logs
+/log/*
+
+# Ignore schema
+/db/schema.rb
+
