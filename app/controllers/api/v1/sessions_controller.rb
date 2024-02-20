@@ -5,9 +5,9 @@ class Api::V1::SessionsController < ApplicationController
         if user && user.authenticate(params[:password])
             token = Auth.generate_token(user.id)
             user.update_attribute(:token, token)
-            render json: { user: user, token: token }
+            render json: { user: user, token: token }, status: :created
         else 
-            render json: { error: 'Invalid email or password' }
+            render json: { error: 'Invalid email or password' }, status: :unprocessable_entity
         end 
     end 
 
@@ -15,7 +15,7 @@ class Api::V1::SessionsController < ApplicationController
         user = User.find_by(token: params[:token])
         if user
             user.update_attribute(:token, nil)
-            render json: { message: 'Session destroyed' }
+            render json: { message: 'Session destroyed' }, status: :no_content
         else
             render json: { error: 'Invalid token' }, status: :unprocessable_entity
         end
