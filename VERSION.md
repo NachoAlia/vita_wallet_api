@@ -1,3 +1,6 @@
+0.0.3
+	- Transacciones
+
 0.0.2
 	- Modificacion index.
 	- Gestion de usuarios.
