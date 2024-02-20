@@ -1,7 +1,10 @@
 0.0.2
 	- Modificacion index.
 	- Gestion de usuarios.
-	- Test usuarios.
+	- Autenticacion.
+	- Configuracion rspec, factory.
+	- Test usuarios, autenticacion.
+	
 
 0.0.1 
 	- Configuracion inicial. 
