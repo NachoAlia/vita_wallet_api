@@ -1,3 +1,9 @@
+0.0.3
+	- Se creo la estructura necesaria y los test asociados a las transacciones.
+	- Se creo la estructura necesaria para los balances.
+	- Se corrigio metodo que obtiene el precio del bitcoin.
+	- Se corrigio autenticacion.
+
 0.0.2
 	- Modificacion index.
 	- Gestion de usuarios.
