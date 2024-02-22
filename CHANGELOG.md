@@ -1,3 +1,6 @@
+0.0.4
+	- https://github.com/NachoAlia/vita_wallet_api/pull/4
+
 0.0.3
 	- https://github.com/NachoAlia/vita_wallet_api/pull/3
 
