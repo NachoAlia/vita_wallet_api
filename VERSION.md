@@ -1,3 +1,5 @@
+0.0.4
+	- Correcciones generales.
 0.0.3
 	- Se creo la estructura necesaria y los test asociados a las transacciones.
 	- Se creo la estructura necesaria para los balances.
