@@ -13,9 +13,8 @@ class Api::V1::SessionsController < ApplicationController
     end 
 
     def destroy
-        user = User.find_by(token: params[:token])
-        if user
-            user.update_attribute(:token, nil)
+        if current_user
+            current_user.update_attribute(:token, nil)
             render json: { message: 'Session destroyed' }, status: :no_content
         else
             render json: { error: 'Invalid token' }, status: :unprocessable_entity
